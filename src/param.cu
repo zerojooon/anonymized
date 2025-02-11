@@ -42,6 +42,7 @@ void set_param(const int num_file) {
     
 
      // Calculate the number of keys based on file size and bucket size
+     // As the size of the dataset increases, we recommend using a larger $k$
     num_key = max(2*num_file*MAX_LINE / max_bucket, int(std::pow(num_file*MAX_LINE, 1.0/2)*2));
     
 
@@ -50,7 +51,7 @@ void set_param(const int num_file) {
         std::cout  << "( max_bucket : " << max_bucket <<  ", num_key : " << num_key << ")\n" << std::endl;
     }
 
-    // The number of keys to process simultaneously. It is adjusted based on CPU memory, with a default setting of 1024.
+    // The number of keys to process simultaneously. It is adjusted based on CPU memory, with a default setting of 2048.
     c=C;
 }
 
