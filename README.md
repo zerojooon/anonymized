@@ -1,12 +1,12 @@
-# FED: Fast and Efficient Dataset Deduplication with GPU Acceleration
+# SED: Scalable and Efficient Dataset Deduplication on GPUs
 
-FED is a tool designed for efficient deduplication of data, leveraging modern computational frameworks.
+SED is a tool designed for efficient deduplication of data, leveraging modern computational frameworks.
 
 ---
 
 ## Prerequisites
 
-Before using FED, ensure the following are installed on your system:
+Before using SED, ensure the following are installed on your system:
 
 - ****CUDA****: For GPU acceleration.
 - ****MPI****: For parallel processing.
@@ -40,7 +40,7 @@ The table below summarizes the hardware and software configurations used in this
 
 ## Installation
 
-Follow these steps to build FED:
+Follow these steps to build SED:
 
 ```bash
 mkdir build
